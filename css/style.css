@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: 'robot', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--main-text-color);
     background-color: var(--background-color);
     font-size: 14px;
@@ -32,7 +32,7 @@ body {
 .list {
     list-style: none;
     font-style: normal;
-    }
+}
 
 .visually-hidden {
     position: absolute;
@@ -45,24 +45,33 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
-  .container {
-    widows: 1200px;  
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    outline: 1px solid red;
-  }
+.container {
+widows: 1600px;  
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+outline: 1px solid red;
+}
 
-  img {
-      display: block;
-  }
+img {
+    display: block;
+}
 
 /*----------HEADER------------*/
 
 .header {
     background-color: var(--background-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.logo {
+    width: 145px;
+    height: 4.67;
+    border: 1px solid #000;
+    margin-left: 215px;
 }
 
 .header-logo-web {
@@ -72,6 +81,7 @@ body {
     line-height: 0.84;    
     letter-spacing: 0.03em;
     color: var(--web-txt-color);
+    
 }
 
 .header-logo-studio {
@@ -85,11 +95,12 @@ body {
 
 .header-link {
     color: var(--second-text-color);
-    font-family: 'Roboto';
+    font-family: 'Roboto' sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;   
+    letter-spacing: 0.02em;
+    padding-top: 32px;
 }
 
 .active,
@@ -107,7 +118,8 @@ body {
 
 .header-link,
 .logo,
-.footer-contact-link {
+.footer-contact-link,
+.footer-logo {
     text-decoration: none;
     font-style: normal;
 }
@@ -126,6 +138,8 @@ body {
 
 .hero {
     background-color: var(--background-hero);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -136,6 +150,8 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text-color);
+    max-width: 696px;
+
 }
 
 .hero-button {
@@ -145,6 +161,7 @@ body {
     font-size: 16px;
     line-height: 1.88;
     color: var(--txt-btn);
+    margin-top: 30px;
 }
 
 .hero-button:hover,
@@ -154,21 +171,34 @@ body {
 
 /*----------ACHIV------------*/
 
+.achivements {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .achivements-item-title {
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--second-text-color);
+    color: var(--second-text-color);    
 }
 
 .achivements-item-text {    
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    padding-top: 10px;
+    max-width: 270px;
 }
 
 /*----------DEVELOPMENT------------*/
+
+.development {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
 .development-title {
     font-weight: 700;
@@ -178,11 +208,21 @@ body {
     color: var(--second-text-color);
 }
 
+.development-img {
+    margin-top: 50px;
+}
+
 /*----------TEAM------------*/
 
-.team,
-.team-title {
+.team {
     background-color: var(--background-team);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-item {    
+    background-color: var(--background-color);
+    max-width: 270px;
 }
 
 .team-title {
@@ -191,6 +231,11 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    padding-top: 94px;
+}
+
+.team-img {
+    padding-top: 50px;
 }
 
 .team-item-name {
@@ -199,6 +244,7 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    padding-top: 30px;
 }
 
 .team-item-function {
@@ -206,9 +252,15 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    padding-top: 10px;
 }
 
 /*----------FOOTER------------*/
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .footer-address-link {
     font-family: 'Roboto', Tahoma, sans-sarif;
@@ -218,6 +270,7 @@ body {
     font-style: none;
     letter-spacing: 0.03em;
     color: var(--footer-address-color);
+    padding-top: 20px;
 }
 
 .footer-contact-link {
@@ -227,11 +280,16 @@ body {
     text-decoration: none;
     letter-spacing: 0.03em;
     color: var(--footer-contact-color);
+    padding-top: 9px;
 }
  
 footer {
     background-color: var(--background-footer);
 }
+
+.footerlogo {
+    margin-left: 215px auto;
+    }
 
 .footer-logo-web {
     font-family: 'Raleway', Tahoma, sans-serif;
