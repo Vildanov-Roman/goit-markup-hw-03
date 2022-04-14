@@ -17,10 +17,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
   </head>
   <!--шапка-->
   <header class="header">
-    <div class="container">
+    <div class="container header-main">
       <a href="./index.html" class="logo" lang="en"
         ><span class="header-logo-web">Web</span
         ><span class="header-logo-studio">Studio</span></a
@@ -38,18 +39,20 @@
           </li>
         </ul>
       </nav>
-      <ul class="header-list list">
-        <li class="header-contact">
-          <a href="mailto:info@devstudio.com" class="header-contact-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contact">
-          <a href="tel:+380961111111" class="header-contact-link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      <div class="header-address">
+        <ul class="header-list list">
+          <li class="header-contact">
+            <a href="mailto:info@devstudio.com" class="header-contact-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact">
+            <a href="tel:+380961111111" class="header-contact-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -146,7 +149,7 @@
             <h3 class="team-item-name">Игорь Демьяненко</h3>
             <p class="team-item-function" lang="en">Product Designer</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
               src="./img/repina1.jpg"
               alt="Ольга Репина"
@@ -157,18 +160,18 @@
             <h3 class="team-item-name">Ольга Репина</h3>
             <p class="team-item-function" lang="en">Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
               src="./img/tarasov1.jpg"
               alt="Николай Тарасов"
               width="270"
               height="260"
-              class=""
+              class="team-img"
             />
             <h3 class="team-item-name">Николай Тарасов</h3>
             <p class="team-item-function" lang="en">Marketing</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
               src="./img/ermakov1.jpg"
               alt="Михаил Ермаков"
