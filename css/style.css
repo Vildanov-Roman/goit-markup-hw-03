@@ -78,7 +78,8 @@ img {
     display: flex;
 }
 
-.logo {
+.logo {    
+    color: var(--web-txt-color);
     padding-top: 24px;
     padding-bottom: 25px;
     width: 145px;
@@ -91,7 +92,6 @@ img {
     font-size: 26px;
     line-height: 0.84;    
     letter-spacing: 0.03em;
-    color: var(--web-txt-color);
     
 }
 
@@ -114,10 +114,14 @@ img {
 
 .header-list {
     display: flex;
-    margin: auto;
 }
 
-.header-list .header-contact + .header-contact {
+.header-list-contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-list-contact .header-contact + .header-contact {
     margin-left: 50px;
 }
 
@@ -159,11 +163,8 @@ img {
     margin-left: auto;
 }
 
-.header-contact:not(:last-child) {
-    margin-right: 50px;
-}
-
 .header-contact-link {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -206,7 +207,8 @@ img {
     background-color: var(--main-btn-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.88;    
+    letter-spacing: 0.06em;
     color: var(--txt-btn);
     border-radius: 4px;
     padding: 10px 32px;
